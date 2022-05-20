@@ -23,7 +23,6 @@ ul{ list-style: none;}
 .logo-footer {
     text-decoration: none;
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -40,8 +39,6 @@ ul{ list-style: none;}
 /* navi */
 .site-nav .link{
      text-decoration: none;
-    font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -80,7 +77,6 @@ ul{ list-style: none;}
 .tel{
     text-decoration: none;
     color: var(--text-color);
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -94,8 +90,7 @@ ul{ list-style: none;}
 
 /* hero */
 .hero{
-    
-    background-color: var(--hero-bgr);
+        background-color: var(--hero-bgr);
 }
 .hero-title{
     font-weight: 900;
@@ -105,6 +100,10 @@ ul{ list-style: none;}
         letter-spacing: 0.06em;
         text-transform: uppercase;
     color:var(--primary-bg-color);
+}
+.hero-title:hover,
+.hero-title:focus{
+    color: var(--primary-bg-color);
 }
 
 /* h2,h3 */
@@ -175,12 +174,12 @@ ul{ list-style: none;}
 }
 /* podval */
 .footer{
-        background-color: #2F303A;
+            background-color: #2F303A;
 }
+
 .maps-footer,
 .footer .mail,.tel{
     text-decoration: none;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -201,7 +200,7 @@ ul{ list-style: none;}
 }
 
 .logo-footer{
-    text-decoration: none;
+        text-decoration: none;
         color: var(--primary-bg-color);
 }
 
@@ -209,14 +208,12 @@ ul{ list-style: none;}
 
 /* portfolio */
 .button-portfolio{
-    color: var(--primery-text-color);
+        color: var(--primery-text-color);
         cursor: pointer;
         background-color: var(--primary-bg-color);
 }
 /* filtr */
 .button-menu{
-    font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
@@ -237,9 +234,7 @@ ul{ list-style: none;}
 }
 .button-text{
     background:var(--portfolio-color-button);
-        border-radius: 4px;
-font-family: 'Roboto';
-    font-style: normal;
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -255,8 +250,6 @@ background-color: var(--accent-color);
 }
 /* portfolio-main */
 .main-title{
-font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -265,9 +258,7 @@ font-family: 'Roboto';
     color:var(--primery-text-color);
 }
 .main-text{
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
+            font-weight: 400;
         font-size: 16px;
         line-height: 1.87;
         /* identical to box height, or 188% */
