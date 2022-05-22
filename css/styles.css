@@ -5,25 +5,22 @@
     --accent-color:#2196F3;
     --primary-bg-color:#FFFFFF;
     --portfolio-color-button:#F5F4FA;
-    --portfolio-color-section: #E5E5E5;
     --hero-bgr: #2F303A;
+    --rgba-footer:rgba(255, 255, 255, 0.6);
 }
 .body {
     background-color:var(--primary-bg-color) ;
     font-family: 'Roboto', sans-serif;
-    color: #212121;
-             
+    color: var(--primery-text-color);
 }
-a{
-    text-decoration: none;
-}
-ul{ list-style: none;
-}
+a{text-decoration: none;}
+ul{ list-style: none;}
 
 /* logo */
 .logo,
 .logo-item,
 .logo-footer {
+    font-style: normal;
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -55,7 +52,8 @@ ul{ list-style: none;
 }
 
 /* address */
-.nav_list{
+.nav_list, .navi_link{
+    font-style: normal;
     text-decoration: none;
     color:var(--text-color) ;
 }
@@ -63,8 +61,6 @@ ul{ list-style: none;
 .nav_list:focus{
     color: var(--primery-text-color)
 }
-
-
 
 /* hero */
 .hero{
@@ -79,15 +75,7 @@ ul{ list-style: none;
         text-transform: uppercase;
     color:var(--primary-bg-color);
 }
-.hero-title:hover,
-.hero-title:focus{
-    color: var(--primary-bg-color);
-}
 
-/* h2,h3 */
-.section-title {
-           color: var(--title-text-color);
-}
 .title{
         font-weight: 700;
         font-size: 14px;
@@ -98,15 +86,15 @@ ul{ list-style: none;
 }
 
 /* font section */
-.section-1 .section-title,
-.section-2 .section-title{
-    font-weight: 700;
+.gallery .gallery__list,
+.user .user_title{
+        font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         color: var(--title-text-color);
         letter-spacing: 0.03em;
 }
-.text {
+.content{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -114,13 +102,13 @@ ul{ list-style: none;
     color: var(--text-color);
 }
 
-.section-1 .section{
-    background-color: var(--portfolio-color-section);
-}
-.section-2 {
+.gallery .section{
     background-color: var(--portfolio-color-button);
 }
-.title-name{
+.user {
+    background-color: var(--portfolio-color-button);
+}
+.user_title{
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
@@ -128,12 +116,13 @@ ul{ list-style: none;
         letter-spacing: 0.03em;
         color:var(--primery-text-color);
 }
-.text-team{
+.user_item{
         font-weight: 400;
         font-size: 16px;
         line-height: 1.18;
         text-align: center;
        letter-spacing: 0.03em;
+       color: var(--text-color);
 }
 
 
@@ -157,20 +146,16 @@ ul{ list-style: none;
 
 .navi_link,
 .footer{
+    font-style: normal;
     text-decoration: none;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
+    color: var(--rgba-footer);
 }
 
-/* .navi_link:hover,
-.navi_link:focus 
-.footer .navi_link{
-           color: rgba(255, 255, 255, 0.6);
-} */
 .logo-footer{
+       font-style: normal;
         text-decoration: none;
         color: var(--primary-bg-color);
 }
@@ -184,19 +169,7 @@ ul{ list-style: none;
         background-color: var(--primary-bg-color);
 }
 /* filtr */
-.button-menu{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
-        /* identical to box height, or 162% */
-    color: var(--primary-bg-color);
-        text-align: center;
-        letter-spacing: 0.03em;
-         background: #2196F3;
-        /* shadow-middle */
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-}
+
 .button-menu:active,
 .button-menu:hover,
 .button-menu:focus {
@@ -204,6 +177,7 @@ ul{ list-style: none;
     background-color:var(--portfolio-color-button);
 }
 .button-text{
+    cursor: pointer;
     background:var(--portfolio-color-button);
     border-radius: 4px;
     font-weight: 500;
@@ -229,7 +203,6 @@ background-color: var(--accent-color);
     color:var(--primery-text-color);
 }
 .main-text{
-            font-weight: 400;
         font-size: 16px;
         line-height: 1.87;
         /* identical to box height, or 188% */
