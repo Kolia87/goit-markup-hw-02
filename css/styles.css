@@ -46,13 +46,17 @@ ul{ list-style: none;}
     color: var(--primery-text-color);
 }
 
-.nav .current{
+.current{
      text-decoration: none;
-    color: var(--title-text-color);
+    color:var(--accent-color);
 }
 
 /* address */
-.nav_list, .navi_link{
+.nav_link_item{
+    color: var(--text-color);
+}
+
+.nav_list{
     font-style: normal;
     text-decoration: none;
     color:var(--text-color) ;
@@ -76,7 +80,7 @@ ul{ list-style: none;}
     color:var(--primary-bg-color);
 }
 
-.title{
+.features_title{
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -85,9 +89,15 @@ ul{ list-style: none;}
         color: var(--title-text-color);
 }
 
-/* font section */
-.gallery .gallery__list,
-.user .user_title{
+/* section */
+.gallery__list{
+       font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        color: var(--title-text-color);
+        letter-spacing: 0.03em;
+}
+.user_title{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
@@ -102,12 +112,10 @@ ul{ list-style: none;}
     color: var(--text-color);
 }
 
-.gallery .section{
-    background-color: var(--portfolio-color-button);
-}
-.user {
-    background-color: var(--portfolio-color-button);
-}
+.gallery {background-color: var(--portfolio-color-button);}
+.section{background-color: var(--portfolio-color-button);}
+/* user */
+.user { background-color: var(--portfolio-color-button);}
 .user_title{
         font-weight: 500;
         font-size: 16px;
@@ -128,7 +136,6 @@ ul{ list-style: none;}
 
 /* button */
 .button {
-        
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
@@ -139,10 +146,8 @@ ul{ list-style: none;}
          color: var(--primary-bg-color);
          cursor: pointer;
 }
-/* podval */
-.footer{
-            background-color: #2F303A;
-}
+/* footer */
+.footer{background-color: var(--hero-bgr);}
 
 .navi_link,
 .footer{
@@ -151,35 +156,35 @@ ul{ list-style: none;}
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--rgba-footer);
+    color:var(--primary-bg-color);
 }
-
 .logo-footer{
        font-style: normal;
         text-decoration: none;
         color: var(--primary-bg-color);
 }
+.nav_item{
+    color: var(--rgba-footer);
+}
+.nav_item:hover
+.nav_item:focus
 
-/* ------------------------------------- */
 
-/* portfolio */
-.button-portfolio{
+/* ---------next-----page----------portfolio------------- */
+
+/* main */
+.main{ background-color: var(--text-color);}
+.button_portfolio{
         color: var(--primery-text-color);
         cursor: pointer;
         background-color: var(--primary-bg-color);
 }
-/* filtr */
 
-.button-menu:active,
-.button-menu:hover,
-.button-menu:focus {
-    color:var(--title-text-color);
-    background-color:var(--portfolio-color-button);
-}
-.button-text{
+.button_text{
     cursor: pointer;
     background:var(--portfolio-color-button);
     border-radius: 4px;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -187,25 +192,30 @@ ul{ list-style: none;}
     text-align: center;
     letter-spacing: 0.03em;
 }
-.button-text:active,
-.button-text:hover,
-.button-text:focus{
+
+.button_text:active,
+.button_text:hover,
+.button_text:focus{
 color: var(--primary-bg-color);
 background-color: var(--accent-color);
 }
+
 /* portfolio-main */
-.main-title{
+.main_title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
     color:var(--primery-text-color);
+    background-color:var(--primary-bg-color)
+   
 }
-.main-text{
+.main_text{
         font-size: 16px;
         line-height: 1.87;
         /* identical to box height, or 188% */
         letter-spacing: 0.03em;
         color:var(--text-color);
+       background-color: var(--primary-bg-color)
 }
