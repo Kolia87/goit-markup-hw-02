@@ -50,6 +50,8 @@ ul{ list-style: none;}
      text-decoration: none;
     color:var(--accent-color);
 }
+.current:hover,
+.current:focus{color: var(--accent-color);}
 
 /* address */
 .nav_link_item{
@@ -61,10 +63,14 @@ ul{ list-style: none;}
     text-decoration: none;
     color:var(--text-color) ;
 }
-.nav_list:hover,
-.nav_list:focus{
-    color: var(--primery-text-color)
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
 }
+.nav_link_contact:hover,
+.nav_link_contact:focus{color: var(--accent-color);}
+.nav_link_item:hover,
+.nav_link_item:focus{color: var(--accent-color);}
 
 /* hero */
 .hero{
@@ -158,6 +164,10 @@ ul{ list-style: none;}
     letter-spacing: 0.03em;
     color:var(--primary-bg-color);
 }
+.navi_link:hover,
+.navi_link:focus
+{color: var(--accent-color);}
+
 .logo-footer{
        font-style: normal;
         text-decoration: none;
@@ -166,14 +176,13 @@ ul{ list-style: none;}
 .nav_item{
     color: var(--rgba-footer);
 }
-.nav_item:hover
-.nav_item:focus
+.nav_item:hover,
+.nav_item:focus{color: var(--accent-color);}
 
 
 /* ---------next-----page----------portfolio------------- */
 
 /* main */
-.main{ background-color: var(--text-color);}
 .button_portfolio{
         color: var(--primery-text-color);
         cursor: pointer;
